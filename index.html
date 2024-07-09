@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3da477;
+        }
+        h1 {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin: 0 0 20px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            background-color: #534caf;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        ul, ol {
+            padding-left: 20px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        dt {
+            font-weight: bold;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: #d5c9c9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        label {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+           margin-left: 40%;
+            padding: 10px 20px;
+            background-color: #960084;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #637900;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Elements</h1>
+
+     <!-- Webpage to Include Image -->
+ <section>
+    <h2>Include Image</h2>
+   <img src="image.png" alt="Placeholder Image" height="100%" width="100%">
+ </section>
+
+    <!-- Table with Text Formatting Tags -->
+    <section>
+        <h2>Text Formatting Tags</h2>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>&lt;b&gt;</td>
+                <td>Bold text</td>
+                <td><b>This text is bold</b></td>
+            </tr>
+            <tr>
+                <td>&lt;i&gt;</td>
+                <td>Italic text</td>
+                <td><i>This text is italic</i></td>
+            </tr>
+            <tr>
+                <td>&lt;u&gt;</td>
+                <td>Underlined text</td>
+                <td><u>This text is underlined</u></td>
+            </tr>
+            <tr>
+                <td>&lt;strike&gt;</td>
+                <td>Strikethrough text</td>
+                <td><strike>This text is strikethrough</strike></td>
+            </tr>
+            <tr>
+                <td>&lt;sub&gt;</td>
+                <td>Subscript text</td>
+                <td>This is <sub>subscript</sub> text</td>
+            </tr>
+            <tr>
+                <td>&lt;sup&gt;</td>
+                <td>Superscript text</td>
+                <td>This is <sup>superscript</sup> text</td>
+            </tr>
+            <tr>
+                <td>&lt;mark&gt;</td>
+                <td>Marked text</td>
+                <td><mark>This text is marked</mark></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Webpage using List Tags -->
+    <section>
+        <h2>HTML Lists</h2>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+
+        <h3>Unordered List</h3>
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+
+        <h3>Definition List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>A standard markup language for creating web pages.</dd>
+            <dt>CSS</dt>
+            <dd>A style sheet language used for describing the presentation of a document written in HTML.</dd>
+            <dt>JavaScript</dt>
+            <dd>A programming language commonly used in web development.</dd>
+        </dl>
+    </section>
+
+    <!-- Employee Registration Webpage -->
+    <section>
+        <h2>Employee Registration</h2>
+        <form action="/submit" method="post">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name">
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            
+            <label for="position">Position:</label>
+            <select id="position" name="position">
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="manager">Manager</option>
+                <option value="analyst">Analyst</option>
+            </select>
+            
+            <input type="submit" value="Register">
+        </form>
+    </section>
+    <a href='/another_page.html' title='This leads you to another page.'>Go to the other page</a>
+
+</body>
+</html>
